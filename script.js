@@ -103,3 +103,5 @@ if (nPassword !== null && nAgPs !== null && nPassword === nAgPs)
   btnPs.addEventListener("click", function () {
     realPassword = nPassword;
   });
+
+//Git test
