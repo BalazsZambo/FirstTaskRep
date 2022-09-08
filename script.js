@@ -6,11 +6,12 @@ const loginButton = document.querySelector(".btn--login");
 const registerModal = document.querySelector(".register-mdl");
 const registrateingB = document.getElementById("register");
 const logininginB = document.getElementById("login");
+const registerButton = document.querySelector(".btn--register");
 
 loginButton?.addEventListener("click", function () {
   loginModal.classList.toggle("hidden");
 });
-registerButton.addEventListener("click", function () {
+registerButton?.addEventListener("click", function () {
   registerModal.classList.toggle("hidden");
 });
 
