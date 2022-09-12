@@ -16,19 +16,17 @@ registerButton?.addEventListener("click", function () {
 });
 
 //register check
-let registerEmail = document.getElementById("register-email").value;
-let passwordCheck = document.getElementById("again").value;
-let password = document.getElementById("first").value;
+let registerEmail = document.getElementById("register-email");
+let passwordCheck = document.getElementById("again");
+let password = document.getElementById("first");
 
 let emailAdress, realPassword;
 
 if (registerEmail !== null && password !== null && password === passwordCheck) {
   registrateingB.disabled = false;
-  logininginB.addEventListener("click", function () {
-    emailAdress = registerEmail;
-    realPassword = password;
-    nEmail.value = emailAdress;
-    nPassword.value = password;
+  registrateingB.addEventListener("click", function () {
+    emailAdress = registerEmail.value;
+    realPassword = password.value;
   });
 } else {
   registrateingB.disabled = true;
@@ -47,14 +45,14 @@ if (realPassword === logPass && emailAdress === logEmail) {
 //Exit click
 const exit = document.querySelector(".exit");
 
-exit.addEventListener("click", function () {
+/*exit.addEventListener("click", function () {
   loginModal.classList.add("hidden");
   registerModal.classList.add("hidden");
-});
+});*/
 
 //nav hide
 const navHide = document.querySelector(".menu");
-const sideBar = document.querySelector("nav.nav");
+const sideBar = document.querySelector(".change");
 
 navHide.addEventListener("click", function () {
   sideBar.classList.toggle("hidden");
